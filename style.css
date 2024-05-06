@@ -1,3 +1,29 @@
-body {
-  background-color: #eef2fd !important;
+body,.card {
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(0, 0, 0) 0%,
+    rgb(64, 64, 64) 90.2%
+  ) !important;
 }
+
+* {
+  color: wheat !important;
+}
+
+.navbar-brand img {
+  max-height: 50px;
+}
+
+.nav-item {
+  padding: 0px 20px;
+}
+
+button, .card {
+  border-color: wheat !important;
+}
+
+.btn:hover {
+  background-color: wheat !important;
+  color: black !important;
+}
+
