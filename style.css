@@ -1,4 +1,4 @@
-body,.card {
+body {
   background: radial-gradient(
     circle at 10% 20%,
     rgb(0, 0, 0) 0%,
@@ -18,12 +18,15 @@ body,.card {
   padding: 0px 20px;
 }
 
-button, .card {
+button{
   border-color: wheat !important;
 }
 
 .btn:hover {
-  background-color: wheat !important;
+  background-color: #f5deb3 !important;
   color: black !important;
 }
 
+.name {
+  font: 80px Arial, sans-serif !important;
+}
