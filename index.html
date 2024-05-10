@@ -53,19 +53,19 @@
                 >
                   <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse col-6" id="navbarSupportedContent">
+                <div class="navbar-collapse col-md-6" id="navbarSupportedContent">
                   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                       <a class="nav-link active" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Education</a>
+                      <a class="nav-link" href="#">About Me</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="#">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Education</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="#">Skills</a>
@@ -75,7 +75,7 @@
                     </li>
                   </ul>
                   <div class="col-md-3">
-                    <div class="input">
+                    <div class="input d-flex justify-content-center align-items-center">
                       <a href="#">Contact</a>
                     </div>
                   </div>
@@ -88,63 +88,53 @@
     </header>
       <!-- navbar -->
       <!-- hero-section -->
-      <header class="py-lg-5">
-        <div class="container px-lg-5 pb-lg-5">
-          <div class="card border-0 mt-lg-5 bg-transparent">
-            <div class="row">
-              <div class="col-lg-4">
-                <h1 class="px-lg-3 mt-lg-5">Hello, I am <br /></h1>
-                <div class="name px-lg-3">
-                  Farhan Israk
-                  <p
-                    style="
-                      color: white !important;
-                      font: 50px Arial, sans-serif !important;
-                    "
-                  >
-                    Software Engineer
-                  </p>
-                </div>
-                <div class="fw-light px-lg-3">
+      <section class="hero">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <div class="left">
+                <h1>Hello, I am </h1> <span class="name">Farhan Israk</span>
+                <h1 style="color: white !important;">Software Engineer</h1>
+                <div class="fw-light">
                   Driven by clean code and problem-solving. Passionate about
                   innovation, I'm always exploring new tech to deliver top-notch
                   solutions. Let's build something remarkable!
                 </div>
+                <div class="download mt-5">
+                  <a href="assets/Farhan_Israk_Yen.pdf" download="Farhan_Israk_Yen.pdf"><i class="bi-cloud-download"></i> Download Resume</a>
+                </div>
               </div>
-              <div class="col-lg-4 py-lg-5">
+            </div>
+            <div class="col-md-6 p-5">
+              <div class="middle">
                 <img
-                  class="rounded-circle img-fluid mx-lg-5"
+                  class="img-fluid "
                   src="assets/images/header-image.png"
                   alt="header-image.png"
                 />
               </div>
-              <div class="col-4 p-5">
-                <div
-                  class="card border-0 bg-transparent float-end"
-                  style="width: 18rem"
-                >
-                  <ul class="list-group list-group-flush rounded-5">
-                    <li class="list-group-item bg-black px-5 py-3">
-                      <h1>3+</h1>
-                      <p>Years Of Experience</p>
-                    </li>
-                    <li class="list-group-item bg-black px-5 py-3">
-                      <h1>25+</h1>
-                      <p>Project Complete</p>
-                    </li>
-                    <li class="list-group-item bg-black px-5 py-3">
-                      <h1>1</h1>
-                      <p>Published Paper</p>
-                    </li>
-                  </ul>
-                </div>
-              </div>
             </div>
           </div>
         </div>
-      </header>
+      </section>
       <!-- hero-section -->
-    </div> -->
+      <!-- about me -->
+      <section class="about_me">
+        <div class="container">
+          <div class="row align-items-center text-center my-lg-5">
+            <div class="col">
+              <h1 class="title">About Me</h1>
+              <p class="mt-4">I'm a passionate software engineer with a knack for problem-solving and a commitment to excellence. 
+                With a strong foundation in both theory and practice, I thrive in collaborative environments where 
+                I can push the boundaries of technology to deliver impactful solutions. I pride myself on my 
+                communication skills and dedication to continuous learning. Outside of work, you'll find me exploring 
+                new technologies, contributing to open-source projects, and enjoying the outdoors.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- about me -->
+    </div>
 
     <!-- script -->
     <script src="js/script.js"></script>

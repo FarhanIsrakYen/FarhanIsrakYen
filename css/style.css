@@ -22,8 +22,17 @@ a {
   text-decoration: none !important;
 }
 
+.title {
+  font-size: 60px;
+  font-weight: 600;
+}
+
 header {
   padding: 30px 0px;
+}
+
+header .navbar-toggler {
+  border: 1px solid #f5deb3;
 }
 
 header nav {
@@ -63,8 +72,7 @@ header nav ul li a.active::after {
 
 header .input {
   display: flex;
-  position: relative;
-  left: 5vw;
+  align-items: center;
 }
 
 header .input a {
@@ -88,15 +96,28 @@ header .input a:hover {
   padding: 0px 10px;
 }
 
-/* button {
-  border-color: wheat !important;
+/* hero section */
+
+.hero .left .name {
+  font-size: 60px;
+  font-weight: 600;
 }
 
-.btn:hover {
+.hero .download a {
+  font-weight: 600;
+  padding: 10px 20px;
+  border: 2px solid wheat !important;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+.download a:hover {
   background-color: #f5deb3 !important;
   color: black !important;
-} */
-
-.name {
-  font: 80px Arial, sans-serif !important;
 }
+
+.hero .download a:hover i {
+  color: black !important;
+}
+
+/* about me section */
