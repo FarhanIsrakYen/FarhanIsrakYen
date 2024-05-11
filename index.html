@@ -13,7 +13,7 @@
     solutions. Let's build something remarkable!"
     />
     <meta name="author" content="Farhan Israk" />
-    <title>Farhan Israk Yen</title>
+    <title>Farhan Israk</title>
     <link rel="icon" type="image/x-icon" href="assets/logo.ico" />
     <link rel="stylesheet" href="css/style.css" />
     <link
@@ -45,6 +45,7 @@
                 <button
                   class="navbar-toggler"
                   type="button"
+                  data-toggle="collapse"
                   data-bs-toggle="collapse"
                   data-bs-target="#navbarSupportedContent"
                   aria-controls="navbarSupportedContent"
@@ -59,19 +60,19 @@
                       <a class="nav-link active" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">About Me</a>
+                      <a class="nav-link" href="#about_me">About</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Experience</a>
+                      <a class="nav-link" href="#experience">Experience</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Education</a>
+                      <a class="nav-link" href="#education">Education</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Skills</a>
+                      <a class="nav-link" href="#skills">Skills</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Projects</a>
+                      <a class="nav-link" href="#projects">Projects & Publication</a>
                     </li>
                   </ul>
                   <div class="col-md-3">
@@ -106,9 +107,9 @@
               </div>
             </div>
             <div class="col-md-6 p-5">
-              <div class="middle">
+              <div class="right">
                 <img
-                  class="img-fluid "
+                  class="img-fluid"
                   src="assets/images/header-image.png"
                   alt="header-image.png"
                 />
@@ -119,21 +120,158 @@
       </section>
       <!-- hero-section -->
       <!-- about me -->
-      <section class="about_me">
+      <section class="about_me" id="about_me">
         <div class="container">
-          <div class="row align-items-center text-center my-lg-5">
-            <div class="col">
+          <div class="row align-items-center text-center mt-sm-5">
               <h1 class="title">About Me</h1>
-              <p class="mt-4">I'm a passionate software engineer with a knack for problem-solving and a commitment to excellence. 
-                With a strong foundation in both theory and practice, I thrive in collaborative environments where 
-                I can push the boundaries of technology to deliver impactful solutions. I pride myself on my 
-                communication skills and dedication to continuous learning. Outside of work, you'll find me exploring 
-                new technologies, contributing to open-source projects, and enjoying the outdoors.</p>
-            </div>
+              <div class="col-md-6">
+                <img class="img-fluid" src="assets/images/ab-img.png" alt="">
+              </div>
+              <div class="col-md-6">
+                <p class="mt-4 text-start">I'm a passionate software engineer with a knack for problem-solving and a commitment to excellence. 
+                  With a strong foundation in both theory and practice, I thrive in collaborative environments where 
+                  I can push the boundaries of technology to deliver impactful solutions. I pride myself on my 
+                  communication skills and dedication to continuous learning. Outside of work, you'll find me exploring 
+                  new technologies, contributing to open-source projects, and enjoying the outdoors.
+                </p>
+              </div>
           </div>
         </div>
       </section>
       <!-- about me -->
+      <!-- experience -->
+      <section class="experience" id="experience">
+        <div class="container">
+          <div class="row align-items-center">
+            <h1 class="title text-center">Experience</h1>
+            <div class="col-md-6">
+              <div class="left">
+                <div class="container mt-5 mb-5">
+                  <div class="offset-md-3">
+                    <ul class="timeline">
+                      <li>
+                        <p>June 2023 - Present</p>
+                        <h4>Technical Product Manager</h4>
+                        <p><i class="bi bi-briefcase-fill"></i> AI Trade, Inc.</p>
+                        <p><i class="bi bi-geo-alt-fill"></i> Florida, United States - Remote</p>
+                      </li>
+                      <li>
+                        <p>May 2022 - June 2023</p>
+                        <h4>Software Engineer III & Back-end Team Lead</h4>
+                        <p><i class="bi bi-briefcase-fill"></i> AI Trade, Inc.</p>
+                        <p><i class="bi bi-geo-alt-fill"></i> Florida, United States - Remote</p>
+                      </li>
+                      <li>
+                        <p>June 2021 - May 2022</p>
+                        <h4>Software Engineer II</h4>
+                        <p><i class="bi bi-briefcase-fill"></i> AI Trade, Inc.</p>
+                        <p><i class="bi bi-geo-alt-fill"></i> Florida, United States - Remote</p>
+                      </li>
+                      <li>
+                        <p>Feb 2021 - June 2021</p>
+                        <h4>Assistant Software Engineer</h4>
+                        <p><i class="bi bi-briefcase-fill"></i> Garnish Technology</p>
+                        <p><i class="bi bi-geo-alt-fill"></i> Dhaka, Bangladesh - On Site</p>
+                      </li>
+                      <li>
+                        <p>Sep 2020 - Dec 2020</p>
+                        <h4>Intern</h4>
+                        <p><i class="bi bi-briefcase-fill"></i> Ultra-X Limited</p>
+                        <p><i class="bi bi-geo-alt-fill"></i> Tokyo, Japan - Remote</p>
+                      </li>
+                    </ul>
+                  </div>
+              </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="right">
+                <img
+                  class="img-fluid"
+                  src="assets/images/exp_image.png"
+                  alt="exp_image.png"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- experience -->
+      <!-- education -->
+      <section class="education" id="education">
+        <div class="container">
+          <div class="row align-items-center">
+            <h1 class="title text-center">Education</h1>
+            <div class="col-md-6">
+              <div class="right">
+                <img
+                  class="img-fluid p-5"
+                  src="assets/images/edu_image.png"
+                  alt="edu_image.png"
+                />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="right">
+                <ul class="timeline">
+                  <li>
+                    <p>May 2015 - Aug 2019</p>
+                    <h4><i class="bi bi-award-fill"></i> B.Sc. in Computer Science & Engineering</h4>
+                    <p><i class="bi bi-building"></i> North South University</p>
+                    <p><i class="bi bi-geo-alt-fill"></i> Dhaka, Bangladesh</p>
+                  </li>
+                  <li>
+                    <p>2012 - 2014</p>
+                    <h4><i class="bi bi-award-fill"></i> Higher Secondary Certificate </h4>
+                    <p><i class="bi bi-building"></i> St. Joseph Higher Secondary School</p>
+                    <p><i class="bi bi-geo-alt-fill"></i> Dhaka, Bangladesh</p>
+                  </li>
+                  <li>
+                    <p>2002 - 2012</p>
+                    <h4><i class="bi bi-award-fill"></i> Secondary School Certificate</h4>
+                    <p><i class="bi bi-building"></i> St. Gregory's High School</p>
+                    <p><i class="bi bi-geo-alt-fill"></i> Dhaka, Bangladesh</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- education -->
+      <!-- skills -->
+      <section class="skills" id="skills">
+        <div class="container">
+          <div class="row align-items-center">
+            <h1 class="title text-center">Skills</h1>
+            <div class="card mt-3">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-xl-2 col-md-3 col-sm-4 col-6">
+                    This is some text within a card body.
+                  </div>
+                  <div class="col-xl-2 col-md-3 col-sm-4 col-6">
+                    This is some text within a card body.
+                  </div>
+                  <div class="col-xl-2 col-md-3 col-sm-4 col-6">
+                    This is some text within a card body.
+                  </div>
+                  <div class="col-xl-2 col-md-3 col-sm-4 col-6">
+                    This is some text within a card body.
+                  </div>
+                  <div class="col-xl-2 col-md-3 col-sm-4 col-6">
+                    This is some text within a card body.
+                  </div>
+                  <div class="col-xl-2 col-md-3 col-sm-4 col-6">
+                    This is some text within a card body.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- skills -->
     </div>
 
     <!-- script -->
