@@ -6,6 +6,10 @@ body {
   ) !important;
 }
 
+section {
+  margin-bottom: 50px;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -220,5 +224,28 @@ ul.timeline {
 /* skills */ 
 
 .skills .card {
-  background-color: #252020;
+  background-color: #141414;
+  border-radius: 30px;
 }
+
+.skills .skills-card {
+  opacity: 1;
+  display: block;
+  width: 110px;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.skills .skills-card:hover {
+  width: 100%;
+  height: auto;
+  background-color: #1f1f1f;
+}
+
+.skills .card img {
+  width: 115px !important;
+  height: 115px !important;
+} 
