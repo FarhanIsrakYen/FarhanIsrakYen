@@ -1,13 +1,5 @@
 body {
-  background: radial-gradient(
-    circle at 10% 20%,
-    rgb(0, 0, 0) 0%,
-    rgb(64, 64, 64) 90.2%
-  ) !important;
-}
-
-section {
-  margin-bottom: 50px;
+  background: linear-gradient(to right, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
 }
 
 * {
@@ -26,13 +18,32 @@ a {
   text-decoration: none !important;
 }
 
+section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  display: none;
+  background-color: #2c2828 !important;
+}
+
 .title {
   font-size: 60px;
   font-weight: 600;
+  margin-bottom: 80px;
 }
 
 header {
   padding: 30px 0px;
+}
+
+.bg-body-tertiary {
+  background-color: black !important;
 }
 
 header .navbar-toggler {
@@ -91,12 +102,12 @@ header .input a:hover {
   color: black !important;
 }
 
-.navbar-brand img {
-  max-height: 100%;
-}
-
 .nav-item {
   padding: 0px 10px;
+}
+nav .logo {
+  width: 250px;
+  height: auto;
 }
 
 /* hero section */
@@ -120,13 +131,12 @@ header .input a:hover {
 }
 
 .hero img {
-  margin: 30px 0px;
   border-radius: 50%;
   box-shadow: 0px 0px 9px 4px wheat;
   animation: glow 1.5s linear infinite alternate;
 }
 
-@keyframes glow{
+@keyframes glow {
   to {
     box-shadow: 0px 10px 30px 20px #e7b04a;
   }
@@ -141,24 +151,13 @@ header .input a:hover {
   color: black !important;
 }
 
-/* about me section */
-
-.about_me h1 {
-  margin: 50px 0px !important;
-}
-
-/* experience */ 
-
-.experience h1 {
-  margin: 50px 0px !important;
-}
-
+/* experience */
 ul.timeline {
   list-style-type: none;
   position: relative;
 }
 .experience ul.timeline:before {
-  content: ' ';
+  content: " ";
   background: #d4d9df;
   display: inline-block;
   position: absolute;
@@ -168,11 +167,10 @@ ul.timeline {
   z-index: 400;
 }
 .experience ul.timeline > li {
-  margin: 20px 0;
   padding-left: 20px;
 }
 .experience ul.timeline > li:before {
-  content: ' ';
+  content: " ";
   background: #ffffff;
   display: inline-block;
   position: absolute;
@@ -184,10 +182,11 @@ ul.timeline {
   z-index: 400;
 }
 
-/* education */ 
-
-.education h1 {
-  margin: 50px 0px !important;
+/* education */
+@media only screen and (max-width: 300px) {
+  .education {
+    margin-top: 150px !important;
+  }
 }
 
 .education ul.timeline {
@@ -195,7 +194,7 @@ ul.timeline {
   position: relative;
 }
 .education ul.timeline:before {
-  content: ' ';
+  content: " ";
   background: #d4d9df;
   display: inline-block;
   position: absolute;
@@ -205,11 +204,10 @@ ul.timeline {
   z-index: 400;
 }
 .education ul.timeline > li {
-  margin: 20px 0;
   padding-left: 20px;
 }
 .education ul.timeline > li:before {
-  content: ' ';
+  content: " ";
   background: #ffffff;
   display: inline-block;
   position: absolute;
@@ -221,7 +219,7 @@ ul.timeline {
   z-index: 400;
 }
 
-/* skills */ 
+/* skills */
 
 .skills .card {
   background-color: #141414;
@@ -233,7 +231,7 @@ ul.timeline {
   display: block;
   width: 110px;
   height: auto;
-  transition: .5s ease;
+  transition: 0.5s ease;
   backface-visibility: hidden;
   background-color: transparent;
   cursor: pointer;
@@ -248,4 +246,69 @@ ul.timeline {
 .skills .card img {
   width: 115px !important;
   height: 115px !important;
-} 
+}
+
+/* projects */
+.project-item {
+  position: relative;
+  overflow: hidden;
+  width: 615px !important;
+  height: 375px !important;
+  margin: 10px;
+}
+
+.project-item img {
+  transition: transform 0.5s ease;
+  width: 615px !important;
+  height: 375px !important;
+}
+
+.project-item:hover img {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  background: #000000b3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.project-item:hover .overlay {
+  opacity: 1;
+}
+
+.overlay .text {
+  color: white;
+  text-align: center;
+}
+
+/* footer */
+.footer_area {
+  background-color: #021017;
+  height: 350px !important;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.footer_social i {
+  color: #021017 !important;
+  font-size: 25px;
+}
+
+.footer_social button {
+  width: 50px !important;
+  height: 50px !important;
+  background-color: aliceblue !important;
+}
+
+.footer_social button:hover {
+  background-color: wheat !important;
+}
