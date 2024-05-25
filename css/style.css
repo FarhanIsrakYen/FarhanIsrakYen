@@ -290,6 +290,28 @@ ul.timeline {
   text-align: center;
 }
 
+/* contact */
+.feature {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  width: 3rem;
+  font-size: 1.5rem;
+  background: linear-gradient(to right, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
+}
+
+#submitButton {
+  background: linear-gradient(to right, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
+  border: 1px solid #f5deb3;
+}
+#submitButton:hover {
+  background: linear-gradient(to right, rgb(64, 64, 64) 0%, rgb(0, 0, 0) 90.2%);
+}
+#contactForm input,
+#contactForm textarea {
+  background-color: #021017;
+}
 /* footer */
 .footer_area {
   background-color: #021017;
