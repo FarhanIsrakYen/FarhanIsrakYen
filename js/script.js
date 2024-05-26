@@ -23,3 +23,23 @@ function sendEmail() {
 
     emailjs.send("service_y611hm8", "template_ahg5sek", params);
 }
+
+// back-to-top button
+let myButton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    myButton.style.display = "block";
+  } else {
+    myButton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0; 
+  document.documentElement.scrollTop = 0; 
+}
+
+// back-to-top button

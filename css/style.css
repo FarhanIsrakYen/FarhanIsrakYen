@@ -252,15 +252,24 @@ ul.timeline {
 .project-item {
   position: relative;
   overflow: hidden;
-  width: 615px !important;
-  height: 375px !important;
+  width: 100%; /* Use a percentage width */
+  max-width: 615px; /* Set a maximum width */
+  aspect-ratio: 615 / 375; /* Maintain aspect ratio */
   margin: 10px;
 }
 
 .project-item img {
   transition: transform 0.5s ease;
-  width: 615px !important;
-  height: 375px !important;
+  width: 100%; /* Use percentage to fill parent container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .project-item {
+    max-width: 90%; /* Adjust maximum width for smaller screens */
+    margin: 5px; /* Adjust margin for smaller screens */
+  }
 }
 
 .project-item:hover img {
@@ -328,9 +337,9 @@ ul.timeline {
 .footer_social button {
   width: 50px !important;
   height: 50px !important;
-  background-color: aliceblue !important;
+  background-color: #f0f8ff !important;
 }
 
 .footer_social button:hover {
-  background-color: wheat !important;
+  background-color: #f7c76f !important;
 }
