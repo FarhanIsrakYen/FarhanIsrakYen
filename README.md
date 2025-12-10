@@ -23,7 +23,6 @@
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 <a href="https://linkedin.com/in/farhan-israk" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="farhan-israk" height="30" width="40" /></a>
-<a href="https://fb.com/farhanisrak.yen" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="farhanisrak.yen" height="30" width="40" /></a>
 </p>
 
 <h3 align="left">Languages and Tools:</h3>
@@ -34,3 +33,4 @@
     <img align="center" src="https://github-readme-streak-stats.herokuapp.com?user=FarhanIsrakYen&theme=cobalt&date_format=j%20M%5B%20Y%5D&background=000000&border=7536B2&stroke=9243DD&ring=89502D&fire=FF9554&currStreakNum=D280FF&sideNums=BC52FF&currStreakLabel=64EAE2&sideLabels=48A8A2&dates=A42EE5"/>
   </a>
 </p>
+
